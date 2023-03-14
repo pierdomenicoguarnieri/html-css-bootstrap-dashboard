@@ -46,6 +46,17 @@ aside{
   width: 150px;
   height: 100vh;
   flex-shrink: 0;
+  background-image: url("../img/sidebar-bg.png");
+  background-color: #051E34;
+}
+
+aside li{
+  transition: all 0.5s;
+}
+
+aside li:hover{
+  background-color: rgba(255, 255, 255, 0.2);
+  text-shadow: 0 0 10px white;
 }
 
 main{
@@ -56,4 +67,10 @@ main{
 
 main .pg-top-bar {
   height: 100px;
+}
+
+@media screen and (max-width: 767px) {
+  aside{
+    width: 60px;
+  }
 }
