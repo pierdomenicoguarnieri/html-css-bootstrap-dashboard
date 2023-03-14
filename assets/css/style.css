@@ -65,8 +65,12 @@ main{
   overflow: auto;
 }
 
-main .pg-top-bar {
-  height: 100px;
+main .pg-top-bar .badge{
+  background-color: rgba(5, 66, 151, 0.7);
+}
+
+.pg-offcanvas-width{
+  width: 700px;
 }
 
 @media screen and (max-width: 767px) {

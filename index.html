@@ -113,7 +113,81 @@
       </aside>
 
       <main class="d-flex flex-column w-100">
-        <div class="pg-top-bar debug-2"></div>
+        <div class="pg-top-bar bg-primary">
+          <div class="container-fluid">
+            <div class="row row-cols-1 flex-wrap-reverse py-3 text-white">
+
+              <div class="col-sm-6 py-1 py-sm-0">
+                <div class="pg-dashboard-title">
+                  <h1 class="d-inline-block">Boolean</h1>
+                  <span class="badge rounded-pill">Piano blaze</span>
+                </div>
+
+                <div class="pg-directory">
+                  <span class="badge rounded-pill">3app</span>
+                  <i class="fa-solid fa-angles-right"></i>
+                  <span class="badge rounded-pill">Boolean mobile app</span>
+                  <span class="badge rounded-pill">Boolean web app</span>
+                  <span class="badge rounded-pill">Boolean blog app</span>
+                </div>
+              </div>
+
+              <div class="col-sm-3 py-1 py-sm-0">
+                <span>Studenti online negli ultimi 30 minuti</span>
+                <h1>125</h1>
+              </div>
+
+              <div class="col-sm-3 py-1 py-sm-0 text-sm-end">
+                <span>Nuovo studente</span>
+                <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="fa-solid fa-plus"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="offcanvas pg-offcanvas-width offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title px-2" id="offcanvasWithBothOptionsLabel">Inserisci un nuovo studente</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <form action="">
+              <div class="pg-row mb-4 d-flex">
+                <div class="pg-text-input px-2">
+                  <label for="name">Nome</label>
+                  <input class="form-control" type="text" aria-label="name">
+                </div>
+                
+                <div class="pg-text-input px-2">
+                  <label for="surname">Cognome</label>
+                  <input class="form-control" type="text" aria-label="surname">
+                </div>
+              </div>
+
+              <div class="pg-row d-flex">
+                <div class="pg-email-input px-2">
+                  <label for="email">Email</label>
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                    <input type="email" class="form-control rounded-end-2" aria-label="email" aria-describedby="basic-addon1">
+                  </div>                                  
+                </div>
+
+                <div class="pg-password-input px-2">
+                  <label for="password">Password</label>
+                  <input class="form-control" type="password" aria-label="password">
+                </div>
+              </div>
+
+              <div class="pg-row w-100 mb-4 d-flex">
+                <div class="pg-text-input w-100 px-2">
+                  <label for="address">Indirizzo</label>
+                  <input class="form-control w-100" type="text" aria-label="address">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
 
         <div class="pg-main-content">
           <div class="container-fluid">
