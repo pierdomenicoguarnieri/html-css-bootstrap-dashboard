@@ -16,6 +16,31 @@
   border: 1px solid black;
 }
 
+header{
+  height: 80px;
+}
+
+header .pg-left-header{
+  min-width: 140px;
+}
+
+header .pg-left-header, header .pg-right-header{
+  width: 10%;
+}
+
+header .pg-center-header{
+  width: 80%;
+}
+
+header .pg-center-header input::placeholder::before{
+  font-family: "FontAwesome";
+  content: "\f002";
+}
+
+header .pg-right-header ul{
+  padding: 0;
+}
+
 aside{
   padding-top: 80px;
   width: 150px;
