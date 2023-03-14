@@ -32,9 +32,9 @@ header .pg-center-header{
   width: 80%;
 }
 
-header .pg-center-header input::placeholder::before{
-  font-family: "FontAwesome";
-  content: "\f002";
+header .pg-center-header .form-control{
+  border: 0;
+  box-shadow: none;
 }
 
 header .pg-right-header ul{
