@@ -239,7 +239,8 @@
             <div class="row row-cols-md-1 py-4">
               <div class="col-lg-8 d-flex flex-column">
 
-                <div id="pg-planner" class="border rounded-top-2">
+                <!-- Planner -->
+                <div id="pg-planner" class="border rounded-2 mb-4">
 
                   <div class="pg-table-title border-bottom">
                     <h2 class="bg-light rounded-top-2 mb-0 px-4 pb-3 pt-1 fw-normal">Prossime classi</h2>
@@ -255,6 +256,7 @@
                           <th class="pg-min-w-100 text-center">Azioni</th>
                         </tr>
                       </thead>
+
                       <tbody>
                         <tr>
                           <td class="d-flex align-items-center">
@@ -434,11 +436,63 @@
                       </tbody>
                     </table>
                   </div>
-                  
                 </div>
+                <!-- /Planner -->
 
-                <div class="pg-faq">
 
+                <div id="pg-faq" class="border rounded-2 mb-4">
+
+                  <div class="pg-accordion-title border-bottom">
+                    <h2 class="bg-light rounded-top-2 mb-0 px-4 pb-3 pt-1 fw-normal">F.A.Q</h2>
+                  </div>
+
+                  <div class="pg-accordion-container px-3 py-3">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Come aggiungere un nuovo studente?
+                          </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">
+                            <p>
+                              Per aggiungere un nuovo studente è necessario premere il pulsante "<i class="fa-solid fa-plus"></i>" nella barra superiore ed inserire i dati dello studente.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Come posso accedere alle informazioni del mio account?
+                          </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">
+                            <p>
+                              Per accedere alle impostazioni del proprio account basta premere sul pulsante "<i class="fa-solid fa-gear"></i> Admin" nella barra laterale.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            Posso usare questa dashboard da mobile?
+                          </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">
+                            <p>
+                              Sì, la visualizzazione della dashboard è supportata su mobile.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
                 </div>
               </div>
 
