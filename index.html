@@ -15,7 +15,7 @@
   </head>
   
   <body>
-    <header class="fixed-top d-flex align-items-center justify-content-between px-3 bg-white">
+    <header class="fixed-top d-flex align-items-center justify-content-between ps-3 bg-white">
 
       <div class="pg-left-header pe-3">
         <img class="w-100" src="assets/img/logo.svg" alt="">
@@ -145,6 +145,7 @@
           </div>
         </div>
 
+        <!-- Offcanvas -->
         <div class="offcanvas pg-offcanvas-width offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
           <div class="offcanvas-header">
             <h5 class="offcanvas-title px-2" id="offcanvasWithBothOptionsLabel">Inserisci un nuovo studente</h5>
@@ -152,42 +153,86 @@
           </div>
           <div class="offcanvas-body">
             <form action="">
-              <div class="pg-row mb-4 d-flex">
-                <div class="pg-text-input px-2">
+              <div class="pg-row w-100 mb-2 d-flex">
+                <div class="pg-text-input w-50 px-2">
                   <label for="name">Nome</label>
-                  <input class="form-control" type="text" aria-label="name">
+                  <input class="form-control" type="text" aria-label="name" required>
                 </div>
                 
-                <div class="pg-text-input px-2">
+                <div class="pg-text-input w-50 px-2">
                   <label for="surname">Cognome</label>
-                  <input class="form-control" type="text" aria-label="surname">
+                  <input class="form-control" type="text" aria-label="surname" required>
                 </div>
               </div>
 
-              <div class="pg-row d-flex">
-                <div class="pg-email-input px-2">
+              <div class="pg-row w-100 mb-2 d-flex">
+                <div class="pg-email-input w-50 px-2">
                   <label for="email">Email</label>
                   <div class="input-group mb-3">
                     <span class="input-group-text" id="basic-addon1">@</span>
-                    <input type="email" class="form-control rounded-end-2" aria-label="email" aria-describedby="basic-addon1">
+                    <input type="email" class="form-control rounded-end-2" aria-label="email" aria-describedby="basic-addon1" required>
                   </div>                                  
                 </div>
 
-                <div class="pg-password-input px-2">
+                <div class="pg-password-input w-50 px-2">
                   <label for="password">Password</label>
-                  <input class="form-control" type="password" aria-label="password">
+                  <input class="form-control" type="password" aria-label="password" required>
                 </div>
               </div>
 
-              <div class="pg-row w-100 mb-4 d-flex">
+              <div class="pg-row w-100 mb-2 d-flex">
                 <div class="pg-text-input w-100 px-2">
                   <label for="address">Indirizzo</label>
                   <input class="form-control w-100" type="text" aria-label="address">
                 </div>
               </div>
+
+              <div class="pg-row w-100 mb-2 d-flex">
+                <div class="pg-text-input w-50 px-2">
+                  <label for="city">Città</label>
+                  <input class="form-control w-100" type="text" aria-label="city">
+                </div>
+
+                <div class="pg-select-input pg-w-30 px-2">
+                  <label for="state">Stato</label>
+                  <select class="form-select w-100" aria-label="state">
+                    <option selected>Scegli...</option>
+                    <option>Italia</option>
+                    <option>Francia</option>
+                    <option>Germania</option>
+                    <option>Inghilterra</option>
+                    <option>Stati Uniti D'America</option>
+                  </select>
+                </div>
+
+                <div class="pg-text-input pg-w-20 px-2">
+                  <label for="cap">CAP</label>
+                  <input class="form-control w-100" type="text" aria-label="cap">
+                </div>
+              </div>
+
+              <div class="pg-row w-100 mb-4 d-flex">
+                <div class="pg-file-input w-100 px-2">
+                  <label for="file">Foto</label>
+                  <input class="form-control" type="file" id="file">                
+                </div>
+              </div>
+
+              <div class="pg-row w-100 mb-4">
+                <div class="pg-checkbox-input px-2">
+                  <input class="form-check-input" type="checkbox" value="" id="privacy" required>
+                  <label class="form-check-label" for="privacy">Seleziona per proseguire</label>  
+                </div>
+              </div>
+
+              <div class="pg-row w-100 mb-2 px-2">
+                <button type="submit" class="btn btn-primary">Salva</button>
+                <button type="button" class="btn btn-warning">Svuota</button>
+              </div>
             </form>
           </div>
         </div>
+        <!-- /Offcanvas -->
 
         <div class="pg-main-content">
           <div class="container-fluid">
