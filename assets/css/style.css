@@ -16,8 +16,16 @@
   border: 1px solid black;
 }
 
-.pg-w-60{
-  width: 60%;
+.pg-min-w-110{
+  min-width: 110px;
+}
+
+.pg-min-w-100{
+  min-width: 100px;
+}
+
+.pg-min-w-50{
+  min-width: 50px;
 }
 
 .pg-w-30{
@@ -28,13 +36,6 @@
   width: 20%;
 }
 
-.pg-w-10{
-  width: 10%;
-}
-
-.pg-fs-7{
-  font-size: 0.9rem;
-}
 
 .offcanvas{
   --bs-offcanvas-width: 800px;
