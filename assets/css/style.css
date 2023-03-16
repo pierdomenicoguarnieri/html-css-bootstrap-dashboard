@@ -68,10 +68,12 @@ header .pg-right-header ul{
   padding: 0;
 }
 
+.pg-main-wrapper{
+  height: calc(100vh - 80px);
+}
+
 aside{
-  padding-top: 80px;
   width: 150px;
-  height: 100vh;
   flex-shrink: 0;
   background-image: url("../img/sidebar-bg.png");
   background-color: #051E34;
@@ -87,8 +89,6 @@ aside li:hover{
 }
 
 main{
-  padding-top: 80px;
-  height: 100vh;
   overflow: auto;
 }
 
