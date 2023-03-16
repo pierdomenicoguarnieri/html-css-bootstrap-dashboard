@@ -1,5 +1,5 @@
 :root {
-  --bs-blue: #1B72E8;
+  --bs-blue: #1B72E8; /*Changed */
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
   --bs-pink: #d63384;
@@ -28,7 +28,7 @@
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
   --bs-danger: #dc3545;
-  --bs-light: #F8F9FA;
+  --bs-light: #F8F9FA;  /*Changed */
   --bs-dark: #21252977;
   --bs-primary-rgb: 27, 114, 232;
   --bs-secondary-rgb: 108, 117, 125;
